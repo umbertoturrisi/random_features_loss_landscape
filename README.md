@@ -49,7 +49,13 @@ Given sensing vectors $x_\mu \in \mathbb{R}^D$ and a fixed random projection mat
 ```math
 \hat{y}_{\mu} = \sigma(x_{\mu} F) W
 ```
-where $\sigma(z) = \tanh(z) / c$ is a normalized non-linear activation.
+where $\sigma(z) = \tanh(z) / c$ is a normalized non-linear activation and $W \in \mathbb{R}^N$ are the students weights.
+
+The ground-truth teacher labels are given by:
+```math
+y_{\mu} = x_{\mu}W^*
+```
+where $W^* \in \mathbb{R}^{D}$ are the teacher weights.
 
 The student minimizes the regularized non-convex loss:
 ```math
@@ -64,7 +70,7 @@ The student minimizes the regularized non-convex loss:
 
 ```bash
 git clone https://github.com/umbertoturrisi/random_features_loss_landscape.git
-cd random-features-loss-landscape
+cd random_features_loss_landscape
 pip install -r requirements.txt
 ```
 
