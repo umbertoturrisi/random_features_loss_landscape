@@ -49,7 +49,7 @@ Given sensing vectors $x_\mu \in \mathbb{R}^D$ and a fixed random projection mat
 ```math
 \hat{y}_{\mu} = \sigma(x_{\mu} F) W
 ```
-where $\sigma(z) = \tanh(z) / c$ is a normalized non-linear activation and $W \in \mathbb{R}^N$ are the students weights.
+where $\sigma(z) = \tanh(z) / c$ is a normalized non-linear activation and $W \in \mathbb{R}^N$ are the student weights.
 
 The ground-truth teacher labels are given by:
 ```math
@@ -82,3 +82,9 @@ Run the simulation from the command line:
 ```bash
 python random_features_gd.py --N 1000 --epochs 100000 --eta 0.2 --a 0.01 --norm sphere --sig yes
 ```
+
+## References
+
+1. B. L. Annesi, D. Bocchi, C. Cammarota (2025). Overparametrization bends the landscape: BBP transitions at initialization in simple Neural Networks. arXiv:2510.18435.
+2. T. Bonnaire, G. Biroli, C. Cammarota (2025). The Role of the Time-Dependent Hessian in High-Dimensional Optimization. arXiv:2403.02418.
+3. S. Sarao Mannelli et al. (2020). Complex Dynamics in Simple Neural Networks: Understanding Gradient Flow in Phase Retrieval. arXiv:2006.06997.
