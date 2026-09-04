@@ -2,7 +2,7 @@
 
 Numerical simulations and finite-size scaling analysis of non-convex loss landscapes in overparameterized Teacher-Student architectures, probing Baik-Ben Arous-Péché (BBP) transitions and glassy threshold states.
 
-Based on the Master's Thesis in Physics at Sapienza University of Rome (A.Y. 2025–2026), supervised by Prof. Chiara Cammarota.
+Based on my Master's Thesis in Physics at Sapienza University of Rome (A.Y. 2025–2026), supervised by Prof. Chiara Cammarota.
 
 ---
 
@@ -27,16 +27,16 @@ Using exact field-theoretic replica calculations (1RSB ansatz) and Random Matrix
 ## Key Results
 
 <p align="center">
-  <img src="figures/phase_diagram.png" width="85%" alt="Empirical vs Theoretical Phase Diagram" />
+  <img src="figures/Phasediagram.png" width="85%" alt="Empirical vs Theoretical Phase Diagram" />
   <br />
   <em>Figure: Comparison between infinite-size theoretical BBP boundaries (initialization in blue, threshold states in red) and empirical finite-size gradient descent boundaries (green markers), showing significant boundary smearing.</em>
 </p>
 
-- **Boundary Blurring**: Finite-size networks ($N \in [100, 5000]$) consistently acquire structural correlation with the signal prior to thermodynamic thresholds, exploiting a logarithmic trapping timescale $\tau \sim \mathcal{O}(\log N)$.
-- **Curvature at Threshold States**: Quenched simulations in a strictly zero-signal setting isolate the local geometry of glassy saddles, verifying that the empirical Hessian spectrum quantitatively matches the continuous bulk predicted by 1RSB replica calculations.
+- **Boundary Blurring**: Finite-size networks ($N \in [100, 5000]$) consistently acquire structural correlation with the signal prior to thermodynamic thresholds.
+- **Curvature at Threshold States**: Simulations in a strictly zero-signal setting isolate the local geometry of glassy saddles, verifying that the empirical Hessian spectrum quantitatively matches the continuous bulk predicted by 1RSB replica calculations.
 
 <p align="center">
-  <img src="figures/threshold_spectrum.png" width="60%" alt="Hessian Spectrum at Threshold States" />
+  <img src="figures/Spectrum.png" width="60%" alt="Hessian Spectrum at Threshold States" />
   <br />
   <em>Figure: Empirical Hessian spectral density $\rho(\lambda)$ at threshold convergence vs. 1RSB theoretical prediction.</em>
 </p>
