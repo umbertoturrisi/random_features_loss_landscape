@@ -38,7 +38,7 @@ Using exact field-theoretic replica calculations (1RSB ansatz) and Random Matrix
 <p align="center">
   <img src="figures/Spectrum.png" width="60%" alt="Hessian Spectrum at Threshold States" />
   <br />
-  <em>Figure: Empirical Hessian spectral density $\rho(\lambda)$ at threshold convergence vs. 1RSB theoretical prediction.</em>
+  <em>Figure: Empirical Hessian spectral density at threshold convergence vs. 1RSB theoretical prediction.</em>
 </p>
 
 ---
@@ -46,17 +46,15 @@ Using exact field-theoretic replica calculations (1RSB ansatz) and Random Matrix
 ## Model Architecture & Loss Formulation
 
 Given sensing vectors $x_\mu \in \mathbb{R}^D$ and a fixed random projection matrix $F \in \mathbb{R}^{D \times N}$, the student predicts:
-$$\hat{y}_\mu = \sigma(x_\mu F) W$$
+```math
+\hat{y}_{\mu} = \sigma(x_{\mu} F) W
+```
 where $\sigma(z) = \tanh(z) / c$ is a normalized non-linear activation.
 
 The student minimizes the regularized non-convex loss:
-$$\mathcal{L}(W) = \frac{1}{P} \sum_{\mu=1}^P \frac{(\hat{y}_\mu^2 - y_\mu^2)^2}{a + y_\mu^2}$$
-
-### Manifold Constraints
-- **Spherical**: $W \in \mathbb{S}^{N-1}(\sqrt{N})$
-- **Elliptic**: Constrained along the metric $C = \kappa_1^2 \frac{F^T F}{D} + \kappa_*^2 I_N$, projecting gradients directly onto the tangent space of the ellipsoid to factor out geometric distortions induced by $F$.
-
----
+```math
+\mathcal{L}(W) = \frac{1}{P} \sum_{\mu=1}^P \frac{(\hat{y}_\mu^2 - y_\mu^2)^2}{a + y_\mu^2}
+```
 
 ## Setup & Usage
 
@@ -68,3 +66,11 @@ $$\mathcal{L}(W) = \frac{1}{P} \sum_{\mu=1}^P \frac{(\hat{y}_\mu^2 - y_\mu^2)^2}
 git clone [https://github.com/umbertoturrisi/random-features-loss-landscape.git](https://github.com/umbertoturrisi/random-features-loss-landscape.git)
 cd random-features-loss-landscape
 pip install -r requirements.txt
+```
+
+### Running Simulations
+
+Run the simulation from the command line:
+
+```bash
+python random_features_gd_jax.py --N 1000 --epochs 100000 --eta 0.2 --a 0.01 --norm sphere --sig yes
