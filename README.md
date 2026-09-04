@@ -27,7 +27,7 @@ Using exact field-theoretic replica calculations (1RSB ansatz) and Random Matrix
 ## Key Results
 
 <p align="center">
-  <img src="figures/phasediagram.png" width="85%" alt="Empirical vs Theoretical Phase Diagram" />
+  <img src="figures/phasediagram.png" width="55%" alt="Empirical vs Theoretical Phase Diagram" />
   <br />
   <em>Figure: Comparison between infinite-size theoretical BBP boundaries (initialization in blue, threshold states in red) and empirical finite-size gradient descent boundaries (green markers), showing significant boundary smearing.</em>
 </p>
