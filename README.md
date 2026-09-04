@@ -72,6 +72,7 @@ The student minimizes the regularized non-convex loss:
 git clone https://github.com/umbertoturrisi/random_features_loss_landscape.git
 cd random_features_loss_landscape
 pip install -r requirements.txt
+pip install -U "jax[cuda12]"
 ```
 
 ### Running Simulations
