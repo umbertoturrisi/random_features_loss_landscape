@@ -2,7 +2,7 @@
 
 Numerical simulations and finite-size scaling analysis of non-convex loss landscapes in overparameterized Teacher-Student architectures, probing Baik-Ben Arous-Péché (BBP) transitions and glassy threshold states.
 
-Based on my Master's Thesis in Physics at Sapienza University of Rome (A.Y. 2025–2026), supervised by Prof. Chiara Cammarota.
+Based on my Master's Thesis in Physics of Complex Systems at Sapienza University of Rome (A.Y. 2025–2026), supervised by Prof. Chiara Cammarota.
 
 ---
 
@@ -63,7 +63,7 @@ The student minimizes the regularized non-convex loss:
 - CUDA-enabled GPU recommended (handled natively via JAX)
 
 ```bash
-git clone [https://github.com/umbertoturrisi/random-features-loss-landscape.git](https://github.com/umbertoturrisi/random-features-loss-landscape.git)
+git clone https://github.com/umbertoturrisi/random_features_loss_landscape.git
 cd random-features-loss-landscape
 pip install -r requirements.txt
 ```
@@ -74,3 +74,4 @@ Run the simulation from the command line:
 
 ```bash
 python random_features_gd.py --N 1000 --epochs 100000 --eta 0.2 --a 0.01 --norm sphere --sig yes
+```
