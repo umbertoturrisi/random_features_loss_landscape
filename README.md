@@ -73,4 +73,4 @@ pip install -r requirements.txt
 Run the simulation from the command line:
 
 ```bash
-python random_features_gd_jax.py --N 1000 --epochs 100000 --eta 0.2 --a 0.01 --norm sphere --sig yes
+python random_features_gd.py --N 1000 --epochs 100000 --eta 0.2 --a 0.01 --norm sphere --sig yes
