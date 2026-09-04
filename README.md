@@ -82,6 +82,13 @@ Run the simulation from the command line:
 ```bash
 python random_features_gd.py --N 1000 --epochs 100000 --eta 0.2 --a 0.01 --norm sphere --sig yes
 ```
+### Command-Line Arguments
+* --N: Student network dimension / expanded features ($N$). Default: 1000.
+* --epochs: Gradient descent steps compiled via jax.lax.scan. Default: 100000.
+* --eta: Gradient descent learning rate. Default: 0.2.
+* --a: Loss regularization constant regulating Hessian conditioning. Default: 0.01.
+* --norm: Manifold constraint: sphere or ellipse.
+* --sig: Signal mode: yes or no.
 
 ## References
 
