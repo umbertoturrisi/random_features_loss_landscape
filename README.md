@@ -27,7 +27,7 @@ Using exact field-theoretic replica calculations (1RSB ansatz) and Random Matrix
 ## Key Results
 
 <p align="center">
-  <img src="figures/Phasediagram.png" width="85%" alt="Empirical vs Theoretical Phase Diagram" />
+  <img src="figures/phasediagram.png" width="85%" alt="Empirical vs Theoretical Phase Diagram" />
   <br />
   <em>Figure: Comparison between infinite-size theoretical BBP boundaries (initialization in blue, threshold states in red) and empirical finite-size gradient descent boundaries (green markers), showing significant boundary smearing.</em>
 </p>
@@ -36,7 +36,7 @@ Using exact field-theoretic replica calculations (1RSB ansatz) and Random Matrix
 - **Curvature at Threshold States**: Simulations in a strictly zero-signal setting isolate the local geometry of glassy saddles, verifying that the empirical Hessian spectrum quantitatively matches the continuous bulk predicted by 1RSB replica calculations.
 
 <p align="center">
-  <img src="figures/Spectrum.png" width="60%" alt="Hessian Spectrum at Threshold States" />
+  <img src="figures/spectrum.png" width="60%" alt="Hessian Spectrum at Threshold States" />
   <br />
   <em>Figure: Empirical Hessian spectral density at threshold convergence vs. 1RSB theoretical prediction.</em>
 </p>
